@@ -1,5 +1,5 @@
 //
-//  DestinationDetails.h
+//  CellHome.h
 //  Lab05
 //
 //  Created by Fer on 6/30/16.
@@ -8,13 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DestinationDetails : UIViewController
-@property NSString *destinationTitle;
-@property NSString *destinationDescription;
-@property NSString *destinationPhoto;
-
+@interface cellHome : UITableViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *imgDestination;
-@property (strong, nonatomic) IBOutlet UILabel *lblTitle;
 @property (strong, nonatomic) IBOutlet UILabel *lblDescription;
+@property (strong, nonatomic) IBOutlet UILabel *lblDestinationTitle;
 
 @end

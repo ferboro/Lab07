@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "cellHome.h"
 #import "DestinationDetails.h"
+#import "SecondDisplay.h"
+
 
 @interface Home : UIViewController
 

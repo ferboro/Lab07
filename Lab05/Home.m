@@ -35,8 +35,8 @@
 }
 //-------------------------------------------------------------------------------
 - (void)initController {
-    self.destinationTitles          = [[NSMutableArray alloc] initWithObjects: @"Marruecos", @"Ibiza", @"Cancún", @"Islas Griegas", @"Islandia", nil];
-    self.destinationPhotos          = [[NSMutableArray alloc] initWithObjects: @"destination01.png", @"destination02.png", @"destination03.png", @"destination04.png", @"destination05.png", nil];
+    self.destinationTitles          = [[NSMutableArray alloc] initWithObjects: @"Jalisco", @"Quintana Roo", @"Oaxaca", @"Chiapas", @"Sonora", nil];
+    self.destinationPhotos          = [[NSMutableArray alloc] initWithObjects: @"jalisco.png", @"quintanaroo.png", @"oaxaca.png", @"chiapas.png", @"sonora.png", nil];
     self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Destino de lujo para almas aventureras que buscan libertad", @"Destino de lujo para almas aventureras que buscan libertad", @"Destino de lujo para almas aventureras que buscan libertad", @"Destino de lujo para almas aventureras que buscan libertad", @"Destino de lujo para almas aventureras que buscan libertad", nil];
 }
 /**********************************************************************************************/
@@ -53,32 +53,6 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 190;
 }
-//-------------------------------------------------------------------------------
-//-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-//    //1. Setup the CATransform3D structure
-//    CATransform3D rotation;
-//    rotation = CATransform3DMakeRotation( (90.0*M_PI)/180, 0.0, 0.7, 0.4);
-//    rotation.m34 = 1.0/ -600;
-//    
-//    //2. Define the initial state (Before the animation)
-//    cell.layer.shadowColor = [[UIColor blackColor]CGColor];
-//    cell.layer.shadowOffset = CGSizeMake(10, 10);
-//    cell.alpha = 0;
-//    
-//    cell.layer.transform = rotation;
-//    cell.layer.anchorPoint = CGPointMake(0, 0.5);
-//    
-//    //3. Define the final state (After the animation) and commit the animation
-//    [UIView beginAnimations:@"rotation" context:NULL];
-//    [UIView setAnimationDuration:0.4];
-//    cell.layer.transform = CATransform3DIdentity;
-//    cell.alpha = 1;
-//    cell.layer.shadowOffset = CGSizeMake(0, 0);
-//    
-//    //Reassure that cell its in its place (WaGo)
-//    cell.frame = CGRectMake(0, cell.frame.origin.y, cell.frame.size.width, cell.frame.size.height);
-//    [UIView commitAnimations];
-//}
 //-------------------------------------------------------------------------------
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     //Initialize cells
@@ -98,20 +72,20 @@
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     self.stTitleSelected        = self.destinationTitles[indexPath.row];
-    self.stDescriptionSelected  = self.destinationDescriptions[indexPath.row];
-    self.stPhotoSelected        = self.destinationPhotos[indexPath.row];
-    [self performSegueWithIdentifier:@"DestinationDetails" sender:self];
+    //self.stDescriptionSelected  = self.destinationDescriptions[indexPath.row];
+    //self.stPhotoSelected        = self.destinationPhotos[indexPath.row];
+    [self performSegueWithIdentifier:@"SecondDisplay" sender:self];
 }
 /**********************************************************************************************/
 #pragma mark - Navigation
 /**********************************************************************************************/
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    if ([segue.destinationViewController isKindOfClass:[DestinationDetails class]]) {
-        DestinationDetails *destination     = [segue destinationViewController];
+    if ([segue.destinationViewController isKindOfClass:[SecondDisplay class]]) {
+        SecondDisplay *destination     = [segue destinationViewController];
         destination.destinationTitle        = self.stTitleSelected;
-        destination.destinationDescription  = self.stDescriptionSelected;
-        destination.destinationPhoto        = self.stPhotoSelected;
+        //destination.destinationDescription  = self.stDescriptionSelected;
+        //destination.destinationPhoto        = self.stPhotoSelected;
         
     }
 }
