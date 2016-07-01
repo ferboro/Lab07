@@ -14,9 +14,9 @@
 @property NSMutableArray *destinationDescriptions;
 @property NSMutableArray *destinationPhotos;
 
-//@property NSString *stTitleSelected;
-//@property NSString *stDescriptionSelected;
-//@property NSString *stPhotoSelected;
+@property NSString *stTitleSelected;
+@property NSString *stDescriptionSelected;
+@property NSString *stPhotoSelected;
 
 @end
 
@@ -97,9 +97,9 @@
 }
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //self.stTitleSelected        = self.destinationTitles[indexPath.row];
-    //self.stDescriptionSelected  = self.destinationDescriptions[indexPath.row];
-    //self.stPhotoSelected        = self.destinationPhotos[indexPath.row];
+    self.stTitleSelected        = self.destinationTitles[indexPath.row];
+    self.stDescriptionSelected  = self.destinationDescriptions[indexPath.row];
+    self.stPhotoSelected        = self.destinationPhotos[indexPath.row];
     [self performSegueWithIdentifier:@"DestinationDetails" sender:self];
 }
 /**********************************************************************************************/
@@ -107,13 +107,13 @@
 /**********************************************************************************************/
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    //if ([segue.destinationViewController isKindOfClass:[DestinationDetails class]]) {
-        //DestinationDetails *destination     = [segue destinationViewController];
-       // destination.destinationTitle        = self.stTitleSelected;
-       // destination.destinationDescription  = self.stDescriptionSelected;
-        //destination.destinationPhoto        = self.stPhotoSelected;
+    if ([segue.destinationViewController isKindOfClass:[DestinationDetails class]]) {
+        DestinationDetails *destination     = [segue destinationViewController];
+        destination.destinationTitle        = self.stTitleSelected;
+        destination.destinationDescription  = self.stDescriptionSelected;
+        destination.destinationPhoto        = self.stPhotoSelected;
         
-    //}
+    }
 }
 
 
