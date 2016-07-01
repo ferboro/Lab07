@@ -14,6 +14,7 @@
 		C140DC051D25F213006CA499 /* destination03.png in Resources */ = {isa = PBXBuildFile; fileRef = C140DBFF1D25F213006CA499 /* destination03.png */; };
 		C140DC061D25F213006CA499 /* destination04.png in Resources */ = {isa = PBXBuildFile; fileRef = C140DC001D25F213006CA499 /* destination04.png */; };
 		C140DC071D25F213006CA499 /* destination05.png in Resources */ = {isa = PBXBuildFile; fileRef = C140DC011D25F213006CA499 /* destination05.png */; };
+		C140DC0A1D2608EB006CA499 /* DestinationDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = C140DC091D2608EB006CA499 /* DestinationDetails.m */; };
 		C17317D81D24CFE700B0BEA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C17317D71D24CFE700B0BEA1 /* main.m */; };
 		C17317DB1D24CFE700B0BEA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C17317DA1D24CFE700B0BEA1 /* AppDelegate.m */; };
 		C17317DE1D24CFE700B0BEA1 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = C17317DD1D24CFE700B0BEA1 /* Home.m */; };
@@ -32,6 +33,8 @@
 		C140DBFF1D25F213006CA499 /* destination03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = destination03.png; sourceTree = "<group>"; };
 		C140DC001D25F213006CA499 /* destination04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = destination04.png; sourceTree = "<group>"; };
 		C140DC011D25F213006CA499 /* destination05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = destination05.png; sourceTree = "<group>"; };
+		C140DC081D2608EB006CA499 /* DestinationDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationDetails.h; sourceTree = "<group>"; };
+		C140DC091D2608EB006CA499 /* DestinationDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationDetails.m; sourceTree = "<group>"; };
 		C17317D31D24CFE700B0BEA1 /* Lab05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab05.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17317D71D24CFE700B0BEA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C17317D91D24CFE700B0BEA1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 			children = (
 				C17317DC1D24CFE700B0BEA1 /* Home.h */,
 				C17317DD1D24CFE700B0BEA1 /* Home.m */,
+				C140DC081D2608EB006CA499 /* DestinationDetails.h */,
+				C140DC091D2608EB006CA499 /* DestinationDetails.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				C140DBF91D25E81A006CA499 /* cellHome.m in Sources */,
 				C17317E41D24CFE700B0BEA1 /* Lab05.xcdatamodeld in Sources */,
 				C17317D81D24CFE700B0BEA1 /* main.m in Sources */,
+				C140DC0A1D2608EB006CA499 /* DestinationDetails.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
