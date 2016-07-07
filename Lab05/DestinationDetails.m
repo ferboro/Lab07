@@ -60,8 +60,8 @@
     {
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 6.
-        GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:20.6947103
-                                                                longitude:-103.4203145
+        GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:19.915606
+                                                                longitude:-103.020143
                                                                      zoom:17];
         mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
         mapView_.myLocationEnabled = YES;
@@ -69,17 +69,17 @@
         
         // Creates a marker in the center of the map.
         GMSMarker *marker = [[GMSMarker alloc] init];
-        marker.position = CLLocationCoordinate2DMake(20.6947103, -103.4203145);
+        marker.position = CLLocationCoordinate2DMake(19.915606, -103.020143);
         marker.title = @"Mazamitla";
-        marker.snippet = @"Clase de Maestría";
+        marker.snippet = @"Mazamitla, Jalisco";
         marker.map = mapView_;
     }
     else if ([self.destinationTitle  isEqual: @"Tapalpa"])
     {
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 6.
-        GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:20.6947103
-                                                                longitude:-103.4203145
+        GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:19.947793
+                                                                longitude:-103.760261
                                                                      zoom:17];
         mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
         mapView_.myLocationEnabled = YES;
@@ -87,17 +87,17 @@
         
         // Creates a marker in the center of the map.
         GMSMarker *marker = [[GMSMarker alloc] init];
-        marker.position = CLLocationCoordinate2DMake(20.6947103, -103.4203145);
+        marker.position = CLLocationCoordinate2DMake(19.947793, -103.760261);
         marker.title = @"Tapalpa";
-        marker.snippet = @"Clase de Maestría";
+        marker.snippet = @"Tapalpa, Jalisco";
         marker.map = mapView_;
     }
     else if ([self.destinationTitle  isEqual: @"Puerto Vallarta"])
     {
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 6.
-        GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:20.6947103
-                                                                longitude:-103.4203145
+        GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:20.611417
+                                                                longitude:-105.234441
                                                                      zoom:17];
         mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
         mapView_.myLocationEnabled = YES;
@@ -105,17 +105,17 @@
         
         // Creates a marker in the center of the map.
         GMSMarker *marker = [[GMSMarker alloc] init];
-        marker.position = CLLocationCoordinate2DMake(20.6947103, -103.4203145);
+        marker.position = CLLocationCoordinate2DMake(20.611417, -105.234441);
         marker.title = @"Puerto Vallarta";
-        marker.snippet = @"Clase de Maestría";
+        marker.snippet = @"Puerto Vallarta, Jalisco";
         marker.map = mapView_;
     }
     else
     {
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 6.
-        GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:20.6947103
-                                                                longitude:-103.4203145
+        GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:20.881915
+                                                                longitude:-103.832149
                                                                      zoom:17];
         mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
         mapView_.myLocationEnabled = YES;
@@ -123,9 +123,9 @@
         
         // Creates a marker in the center of the map.
         GMSMarker *marker = [[GMSMarker alloc] init];
-        marker.position = CLLocationCoordinate2DMake(20.6947103, -103.4203145);
+        marker.position = CLLocationCoordinate2DMake(20.881915, -103.832149);
         marker.title = @"Tequila";
-        marker.snippet = @"Clase de Maestría";
+        marker.snippet = @"Tequila, Jalisco";
         marker.map = mapView_;
     }
 }
