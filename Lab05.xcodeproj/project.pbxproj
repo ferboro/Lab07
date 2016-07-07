@@ -47,6 +47,7 @@
 		C15463771D26E41300E457F2 /* puertopenasco.png in Resources */ = {isa = PBXBuildFile; fileRef = C15463711D26E41300E457F2 /* puertopenasco.png */; };
 		C15463781D26E41300E457F2 /* sonora.png in Resources */ = {isa = PBXBuildFile; fileRef = C15463721D26E41300E457F2 /* sonora.png */; };
 		C154637A1D26FA8700E457F2 /* sancristobal.png in Resources */ = {isa = PBXBuildFile; fileRef = C15463791D26FA8700E457F2 /* sancristobal.png */; };
+		C15E15581D2E9F8500219B32 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C15E15571D2E9F8500219B32 /* GoogleService-Info.plist */; };
 		C17317D81D24CFE700B0BEA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C17317D71D24CFE700B0BEA1 /* main.m */; };
 		C17317DB1D24CFE700B0BEA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C17317DA1D24CFE700B0BEA1 /* AppDelegate.m */; };
 		C17317DE1D24CFE700B0BEA1 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = C17317DD1D24CFE700B0BEA1 /* Home.m */; };
@@ -103,6 +104,7 @@
 		C15463711D26E41300E457F2 /* puertopenasco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = puertopenasco.png; sourceTree = "<group>"; };
 		C15463721D26E41300E457F2 /* sonora.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sonora.png; sourceTree = "<group>"; };
 		C15463791D26FA8700E457F2 /* sancristobal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sancristobal.png; sourceTree = "<group>"; };
+		C15E15571D2E9F8500219B32 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C17317D31D24CFE700B0BEA1 /* Lab05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab05.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C17317D71D24CFE700B0BEA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C17317D91D24CFE700B0BEA1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,7 +116,7 @@
 		C17317E51D24CFE700B0BEA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C17317E81D24CFE700B0BEA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C17317EA1D24CFE700B0BEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C19151BE1D2E104400B99FA4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		C19151BE1D2E104400B99FA4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +247,7 @@
 		C17317D51D24CFE700B0BEA1 /* Lab05 */ = {
 			isa = PBXGroup;
 			children = (
+				C15E15571D2E9F8500219B32 /* GoogleService-Info.plist */,
 				C154636C1D26E41300E457F2 /* Sonora */,
 				C154635F1D26E40800E457F2 /* QuintanaRoo */,
 				C15463521D26E40100E457F2 /* Oaxaca */,
@@ -403,6 +406,7 @@
 				C140DC161D263BAE006CA499 /* chapala.png in Resources */,
 				C140DC1B1D263BAE006CA499 /* tequila.png in Resources */,
 				C15463771D26E41300E457F2 /* puertopenasco.png in Resources */,
+				C15E15581D2E9F8500219B32 /* GoogleService-Info.plist in Resources */,
 				C17317E11D24CFE700B0BEA1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 //
 
 #import "DestinationDetails.h"
+#import "Google/Analytics.h"
 @import GoogleMaps;
 
 @interface DestinationDetails ()
@@ -31,6 +32,13 @@
 //    [self.lblDescription sizeToFit];
 }
 //-------------------------------------------------------------------------------
+
+- (void)viewWillAppear:(BOOL)animated{
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    [tracker set:kGAIScreenName value:@"DestinationDetails"];
+    [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
