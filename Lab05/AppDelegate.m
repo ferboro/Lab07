@@ -17,6 +17,9 @@
 
 #import <Pushwoosh/PushNotificationManager.h>
 
+#import <Fabric/Fabric.h>
+#import <DigitsKit/DigitsKit.h>
+
 @interface AppDelegate ()
 
 @end
@@ -51,6 +54,9 @@
     
     // register for push notifications!
     [[PushNotificationManager pushManager] registerForPushNotifications];
+    
+    [Fabric with:@[[Digits class]]];
+
     
     return YES;
 }
